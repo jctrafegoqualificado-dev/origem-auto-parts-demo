@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato · ORIGEM Auto Parts</title>
+<meta name="description" content="WhatsApp, telefone, e-mail e visita ao pátio. Resposta em até 15 minutos em horário comercial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-info">
+      <span>📍 <strong>Rua Exemplo, 1000 — Cidade/UF</strong></span>
+      <span>🕒 <strong>Seg–Sex 8h–18h · Sáb 8h–13h</strong></span>
+      <span>📧 contato@origem.com.br</span>
+    </div>
+    <div class="topbar-info"><span>FALE COM A GENTE: <strong>(11) 99999-0000</strong></span></div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark">O</span><span class="brand-name">ORIGEM<small>Auto Parts</small></span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="nav-menu">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="catalogo.html" data-page="catalogo">Catálogo</a>
+      <a href="sobre.html" data-page="sobre">Sobre</a>
+      <a href="como-funciona.html" data-page="como-funciona">Como funciona</a>
+      <a href="blog.html" data-page="blog">Conteúdo</a>
+      <a href="contato.html" data-page="contato">Contato</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-phone"><div class="ic">📞</div><div><small>Atendimento</small><strong>(11) 99999-0000</strong></div></div>
+      <a href="#orcamento" class="btn btn-yellow btn-arrow">Orçar peça</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero-page">
+  <div class="container hero-page-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span>Contato</div>
+    <h1 class="display">Resposta em 15 minutos.<br>Foto, preço e <span class="yellow">NF.</span></h1>
+    <p class="lead">Sem cadastro complicado, sem ligação automática, sem "vamos te ligar depois". Você escolhe o canal — a gente trata como cliente sério desde o primeiro contato.</p>
+  </div>
+</section>
+
+<!-- CONTATO + FORM -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid reveal">
+
+      <div>
+        <span class="eyebrow">Canais diretos</span>
+        <h2 class="display" style="font-size:34px;margin:14px 0 28px">Cinco jeitos<br>de falar com <span style="color:var(--yellow-dark)">a gente.</span></h2>
+
+        <div class="contact-info-block">
+          <div class="ic">💬</div>
+          <div><strong>WhatsApp · canal preferido</strong><a href="https://wa.me/5511999990000" target="_blank">(11) 99999-0000</a></div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ic">📞</div>
+          <div><strong>Telefone fixo</strong><a href="tel:+551130000000">(11) 3000-0000</a></div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ic">📧</div>
+          <div><strong>E-mail · parcerias e seguradoras</strong><a href="mailto:contato@origem.com.br">contato@origem.com.br</a></div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ic">📍</div>
+          <div><strong>Endereço do pátio</strong><span>Rua Exemplo, 1000<br>Cidade — UF · CEP 00000-000</span></div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ic">🕒</div>
+          <div><strong>Horário de atendimento</strong><span>Seg–Sex: 8h às 18h<br>Sábado: 8h às 13h<br>Dom/feriados: fechado</span></div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ic">📜</div>
+          <div><strong>Dados fiscais</strong><span>CNPJ 00.000.000/0001-00<br>Licença CETESB · IBAMA</span></div>
+        </div>
+      </div>
+
+      <div class="booking-form" id="orcamento" style="background:var(--white)">
+        <h3 class="display">Pedir orçamento</h3>
+        <p class="desc">Preencha o essencial. Devolvemos no WhatsApp com foto, preço e prazo.</p>
+        <form onsubmit="enviarWA(event)">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <input type="tel" id="tel" placeholder="WhatsApp com DDD" required>
+          <input type="text" id="carro" class="full" placeholder="Veículo, modelo e ano" required>
+          <input type="text" id="peca" class="full" placeholder="Peça que você procura" required>
+          <select id="quem" class="full" required>
+            <option value="">Você é...</option>
+            <option>Motorista (pessoa física)</option>
+            <option>Mecânico / Oficina</option>
+            <option>Seguradora / Despachante</option>
+            <option>Outro</option>
+          </select>
+          <textarea id="msg" class="full" placeholder="Observação (opcional)" rows="3"></textarea>
+          <button type="submit" class="btn btn-yellow btn-arrow">Enviar para WhatsApp</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="section-head" style="text-align:center;margin-top:80px;margin-bottom:24px">
+        <span class="eyebrow" style="justify-content:center">Visite o pátio</span>
+        <h2 class="display" style="font-size:34px">Operação aberta para<br><span class="yellow">visita técnica.</span></h2>
+        <p class="desc" style="margin:0 auto">Recebemos oficinas, seguradoras e clientes que querem ver o processo de procedência de perto. Agende com 24h de antecedência.</p>
+      </div>
+      <div class="map-block">🗺️ Espaço reservado para iframe do Google Maps<br><small style="font-size:11px;margin-top:6px;display:block">Substituir por iframe do Google Maps no momento da publicação</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ATALHOS POR PERFIL -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-head reveal" style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Por tipo de cliente</span>
+      <h2 class="display">Atalhos <span class="yellow">por canal.</span></h2>
+    </div>
+
+    <div class="shortcut-grid reveal">
+      <a href="https://wa.me/5511999990000?text=Sou%20motorista" target="_blank" class="shortcut">
+        <div class="ic">👤</div>
+        <h3>Motorista</h3>
+        <p>Bateu o carro, manutenção cara ou peça antiga difícil de achar. Falamos direto, sem rodeio técnico.</p>
+        <span class="more">Abrir WhatsApp PF →</span>
+      </a>
+      <a href="https://wa.me/5511999990000?text=Tenho%20oficina" target="_blank" class="shortcut">
+        <div class="ic">🔧</div>
+        <h3>Oficina mecânica</h3>
+        <p>Faturamento mensal, desconto por volume, reserva de peça e entrega prioritária. Quer virar parceiro?</p>
+        <span class="more">Abrir WhatsApp B2B →</span>
+      </a>
+      <a href="mailto:contato@origem.com.br?subject=Parceria%20seguradora" class="shortcut">
+        <div class="ic">🛡️</div>
+        <h3>Seguradora / Despachante</h3>
+        <p>Atendimento dedicado, NF com CFOP de sinistro e laudo de procedência rastreável. Falar com comercial.</p>
+        <span class="more">Mandar e-mail →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-stripe">
+  <div class="container cta-stripe-inner">
+    <div class="big-num">15min</div>
+    <div>
+      <h2 class="display">Prefere falar agora?</h2>
+      <p>Clique abaixo e fale direto com nosso time no WhatsApp.</p>
+    </div>
+    <a href="https://wa.me/5511999990000" target="_blank" class="btn btn-black btn-arrow">Abrir WhatsApp</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">O</span><span class="brand-name">ORIGEM<small>Auto Parts</small></span></a>
+        <p>Reciclagem automotiva regularizada. Peças originais com origem rastreada, NF e garantia formal.</p>
+        <div class="social"><a href="#">IG</a><a href="#">FB</a><a href="#">YT</a><a href="#">WA</a></div>
+      </div>
+      <div class="footer-col"><h5>Navegação</h5>
+        <a href="index.html">Home</a><a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a><a href="como-funciona.html">Como funciona</a>
+        <a href="blog.html">Conteúdo</a><a href="contato.html">Contato</a>
+      </div>
+      <div class="footer-col"><h5>Atende</h5>
+        <a>Motorista (PF)</a><a>Oficina mecânica</a><a>Seguradora</a>
+        <a>Frota corporativa</a><a>Despachante</a>
+      </div>
+      <div class="footer-contact"><h5>Contato</h5>
+        <div class="info"><div class="ic">📞</div><div><strong>(11) 99999-0000</strong><span>Atendimento e WhatsApp</span></div></div>
+        <div class="info"><div class="ic">📧</div><div><strong>contato@origem.com.br</strong><span>E-mail comercial</span></div></div>
+        <div class="info"><div class="ic">📍</div><div><strong>Rua Exemplo, 1000</strong><span>Cidade — UF · CEP 00000-000</span></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 ORIGEM Auto Parts LTDA · CNPJ 00.000.000/0001-00</div>
+      <div>Operação licenciada · CETESB · IBAMA</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5511999990000" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script src="assets/script.js"></script>
+</body>
+</html>
